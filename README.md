@@ -44,7 +44,6 @@ AI assistance was used as a development aid; calculations, code, and grader resu
 | `run_all_labs.py` | Run the local/official lab verification workflow. |
 | `data/labs/solutions/` | Local lab implementations and IBM credential helper; intentionally Git-ignored. |
 | `data/labs/extract_lab_map.py` | Extract the installed grader's lab/exercise map. |
-| `data/labs/qgss-2026-official/` | Upstream course/lab material; treat as third-party content and retain its original terms. |
 | `data/qgss26/scripts/` | ON24 public-asset collection and authenticated-session video attempts. |
 | `data/ibm_learning/scripts/` | IBM Quantum Learning asset collection. |
 | `data/run_all_collection.sh` | Run the available collection workflows in sequence. |
@@ -56,6 +55,7 @@ AI assistance was used as a development aid; calculations, code, and grader resu
 | `links.md` | External project and event links. |
 
 Collected downloads, HTML snapshots, generated catalog outputs, account-specific reports, environments, caches, local credentials, and lab solutions are not included in this public source snapshot. See [`.gitignore`](./.gitignore).
+Upstream course materials and other third-party content are not redistributed in this repository.
 
 ### Requirements
 
@@ -244,7 +244,6 @@ A IA foi usada como apoio ao desenvolvimento; os cálculos, o código e os resul
 | `run_all_labs.py` | Executar o fluxo de verificação local/oficial dos labs. |
 | `data/labs/solutions/` | Implementações locais e auxiliar de credenciais IBM; ignorada pelo Git intencionalmente. |
 | `data/labs/extract_lab_map.py` | Extrair o mapa de labs/exercícios do corretor instalado. |
-| `data/labs/qgss-2026-official/` | Material upstream do curso/labs; tratar como conteúdo de terceiros e manter os termos originais. |
 | `data/qgss26/scripts/` | Coleta de recursos públicos ON24 e tentativas de vídeo com sessão autenticada. |
 | `data/ibm_learning/scripts/` | Coleta de recursos do IBM Quantum Learning. |
 | `data/run_all_collection.sh` | Executar sequencialmente os fluxos de coleta disponíveis. |
@@ -256,6 +255,7 @@ A IA foi usada como apoio ao desenvolvimento; os cálculos, o código e os resul
 | `links.md` | Links externos do projeto e do evento. |
 
 Downloads coletados, snapshots HTML, saídas de execução, saídas de catálogo geradas, relatórios associados à conta, ambientes, caches, credenciais locais e soluções dos labs não estão incluídos neste snapshot público do código-fonte. Consulte [`.gitignore`](./.gitignore).
+Materiais upstream do curso e outros conteúdos de terceiros não são redistribuídos neste repositório.
 
 ### Requisitos
 
