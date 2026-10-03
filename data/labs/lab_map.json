@@ -1,0 +1,694 @@
+{
+  "challenge": "qgss_2026",
+  "grader_module": "qc_grader.challenges.qgss_2026",
+  "labs": {
+    "lab0": [
+      {
+        "grader": "grade_lab0_ex1",
+        "exercise": "ex1",
+        "params": []
+      },
+      {
+        "grader": "grade_lab0_ex2",
+        "exercise": "ex2",
+        "params": [
+          {
+            "name": "counts",
+            "annotation": "Ex2Input"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab0_ex3",
+        "exercise": "ex3",
+        "params": [
+          {
+            "name": "exp_val",
+            "annotation": "np.ndarray | float"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab0_ex4",
+        "exercise": "ex4",
+        "params": [
+          {
+            "name": "sv",
+            "annotation": "Statevector"
+          }
+        ]
+      }
+    ],
+    "lab1": [
+      {
+        "grader": "grade_lab1_ex1",
+        "exercise": "ex1",
+        "params": [
+          {
+            "name": "qc",
+            "annotation": "QuantumCircuit"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab1_ex2",
+        "exercise": "ex2",
+        "params": [
+          {
+            "name": "predictions",
+            "annotation": "Ex2Input"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab1_ex3",
+        "exercise": "ex3",
+        "params": [
+          {
+            "name": "qc",
+            "annotation": "QuantumCircuit"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab1_ex4",
+        "exercise": "ex4",
+        "params": [
+          {
+            "name": "qc",
+            "annotation": "QuantumCircuit"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab1_ex5",
+        "exercise": "ex5",
+        "params": [
+          {
+            "name": "qc",
+            "annotation": "QuantumCircuit"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab1_ex6",
+        "exercise": "ex6",
+        "params": [
+          {
+            "name": "qc",
+            "annotation": "QuantumCircuit"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab1_ex7",
+        "exercise": "ex7",
+        "params": [
+          {
+            "name": "qc",
+            "annotation": "QuantumCircuit"
+          }
+        ]
+      }
+    ],
+    "lab2": [
+      {
+        "grader": "grade_lab2_ex1",
+        "exercise": "ex1",
+        "params": [
+          {
+            "name": "basis_operations",
+            "annotation": "list[str]"
+          },
+          {
+            "name": "coupling_map",
+            "annotation": "list[list[int] | tuple[int, int]] | EdgeList"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab2_ex2",
+        "exercise": "ex2",
+        "params": [
+          {
+            "name": "repeated_x_circuit",
+            "annotation": "Callable[[int], QuantumCircuit]"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab2_ex3",
+        "exercise": "ex3",
+        "params": [
+          {
+            "name": "repeated_x_meas_x_circuit",
+            "annotation": "Callable[[int], QuantumCircuit]"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab2_ex4",
+        "exercise": "ex4",
+        "params": [
+          {
+            "name": "answer_pauli_visibility",
+            "annotation": "dict[str, dict[str, bool | None]]"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab2_ex5",
+        "exercise": "ex5",
+        "params": [
+          {
+            "name": "initial_layout",
+            "annotation": "list[int]"
+          },
+          {
+            "name": "basis_gates",
+            "annotation": "list[str]"
+          },
+          {
+            "name": "count_swap_gates",
+            "annotation": "Callable[[QuantumCircuit], int]"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab2_ex6",
+        "exercise": "ex6",
+        "params": [
+          {
+            "name": "build_circuit",
+            "annotation": "Callable[[int], QuantumCircuit]"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab2_ex7",
+        "exercise": "ex7",
+        "params": [
+          {
+            "name": "quantum_circuit_params",
+            "annotation": "Callable[[QuantumCircuit], CircuitParams]"
+          },
+          {
+            "name": "build_circuit",
+            "annotation": "Callable[[int], QuantumCircuit]"
+          }
+        ]
+      }
+    ],
+    "lab3": [
+      {
+        "grader": "grade_lab3_ex1",
+        "exercise": "ex1",
+        "params": [
+          {
+            "name": "options_dict",
+            "annotation": "Lab3Ex1OptionsDict"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab3_ex2",
+        "exercise": "ex2",
+        "params": [
+          {
+            "name": "ising_ex2",
+            "annotation": "QuantumCircuit"
+          },
+          {
+            "name": "mirror_ex2",
+            "annotation": "QuantumCircuit"
+          },
+          {
+            "name": "boxed_circuit_ex2",
+            "annotation": "QuantumCircuit"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab3_ex3",
+        "exercise": "ex3",
+        "params": [
+          {
+            "name": "template_ex3",
+            "annotation": "QuantumCircuit"
+          },
+          {
+            "name": "samplex_ex3",
+            "annotation": "Samplex"
+          },
+          {
+            "name": "samplex_args_ex3",
+            "annotation": "TensorInterface"
+          },
+          {
+            "name": "program_ex3",
+            "annotation": "QuantumProgram"
+          },
+          {
+            "name": "refs_to_noise_models_ex3",
+            "annotation": "dict[str, PauliLindbladMap]"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab3_ex4",
+        "exercise": "ex4",
+        "params": [
+          {
+            "name": "target_observable_ex4",
+            "annotation": "SparsePauliOp"
+          },
+          {
+            "name": "target_observable_ex4_isa",
+            "annotation": "SparsePauliOp"
+          },
+          {
+            "name": "obs_tilde_ex4",
+            "annotation": "SparsePauliOp"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab3_ex5",
+        "exercise": "ex5",
+        "params": [
+          {
+            "name": "circuit_ising",
+            "annotation": "QuantumCircuit"
+          },
+          {
+            "name": "mirrored_circuit",
+            "annotation": "QuantumCircuit"
+          },
+          {
+            "name": "boxed",
+            "annotation": "QuantumCircuit"
+          },
+          {
+            "name": "obs_list",
+            "annotation": "list[SparsePauliOp]"
+          },
+          {
+            "name": "forward_list",
+            "annotation": "list[dict[str, PauliLindbladMap]]"
+          },
+          {
+            "name": "backward_bound",
+            "annotation": "dict[str, PauliLindbladMap]"
+          }
+        ]
+      }
+    ],
+    "lab4a": [
+      {
+        "grader": "grade_lab4a_ex1",
+        "exercise": "ex1",
+        "params": [
+          {
+            "name": "criteria_1",
+            "annotation": "str"
+          },
+          {
+            "name": "criteria_2",
+            "annotation": "str"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4a_ex2",
+        "exercise": "ex2",
+        "params": [
+          {
+            "name": "energy",
+            "annotation": "float"
+          },
+          {
+            "name": "expectation_value",
+            "annotation": "float"
+          }
+        ]
+      }
+    ],
+    "lab4b": [
+      {
+        "grader": "grade_lab4b_ex1a",
+        "exercise": "ex1a",
+        "params": [
+          {
+            "name": "partition_graph",
+            "annotation": "nx.Graph"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4b_ex1b",
+        "exercise": "ex1b",
+        "params": [
+          {
+            "name": "partition_hamiltonian",
+            "annotation": "SparsePauliOp"
+          },
+          {
+            "name": "circuit",
+            "annotation": "QuantumCircuit"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4b_ex2a",
+        "exercise": "ex2a",
+        "params": [
+          {
+            "name": "options_v1",
+            "annotation": "SamplerOptions"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4b_ex2b",
+        "exercise": "ex2b",
+        "params": [
+          {
+            "name": "options_v2",
+            "annotation": "SamplerOptions"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4b_ex2c",
+        "exercise": "ex2c",
+        "params": [
+          {
+            "name": "options_v3",
+            "annotation": "SamplerOptions"
+          },
+          {
+            "name": "optimized_circuit",
+            "annotation": "QuantumCircuit"
+          },
+          {
+            "name": "meas_map_v3",
+            "annotation": "dict[int, int] | list[int]"
+          },
+          {
+            "name": "m3_quasis_v3",
+            "annotation": "dict[str, float | np.floating]"
+          },
+          {
+            "name": "counts_bin_v3",
+            "annotation": "dict[str | int, int]"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4b_ex2d",
+        "exercise": "ex2d",
+        "params": [
+          {
+            "name": "options_v4",
+            "annotation": "SamplerOptions"
+          },
+          {
+            "name": "optimized_circuit",
+            "annotation": "QuantumCircuit"
+          },
+          {
+            "name": "meas_map_v4",
+            "annotation": "dict[int, int] | list[int]"
+          },
+          {
+            "name": "m3_quasis_v4",
+            "annotation": "dict[str, float | np.floating]"
+          },
+          {
+            "name": "counts_bin_v4",
+            "annotation": "dict[str | int, int]"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4b_ex2",
+        "exercise": "ex2",
+        "params": [
+          {
+            "name": "options_list",
+            "annotation": "list[SamplerOptions]"
+          },
+          {
+            "name": "counts_list",
+            "annotation": "list[dict[str, int | float]]"
+          },
+          {
+            "name": "job_list",
+            "annotation": "list[RuntimeJobV2 | LocalRuntimeJob]"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4b_ex3a",
+        "exercise": "ex3a",
+        "params": [
+          {
+            "name": "reduce_qubits_with_pce",
+            "annotation": "ReduceQubitsWithPCE"
+          },
+          {
+            "name": "node_x",
+            "annotation": "list[int]"
+          },
+          {
+            "name": "node_y",
+            "annotation": "list[int]"
+          },
+          {
+            "name": "node_z",
+            "annotation": "list[int]"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4b_ex3b",
+        "exercise": "ex3b",
+        "params": [
+          {
+            "name": "pauli_correlation_encoding_x",
+            "annotation": "list[SparsePauliOp]"
+          },
+          {
+            "name": "pauli_correlation_encoding_y",
+            "annotation": "list[SparsePauliOp]"
+          },
+          {
+            "name": "pauli_correlation_encoding_z",
+            "annotation": "list[SparsePauliOp]"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4b_ex3c",
+        "exercise": "ex3c",
+        "params": [
+          {
+            "name": "hamiltonian_pce",
+            "annotation": "SparsePauliOp"
+          },
+          {
+            "name": "circuit_pce",
+            "annotation": "QuantumCircuit"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4b_ex4a",
+        "exercise": "ex4a",
+        "params": [
+          {
+            "name": "options_no_em",
+            "annotation": "EstimatorOptions"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4b_ex4b",
+        "exercise": "ex4b",
+        "params": [
+          {
+            "name": "options_trex",
+            "annotation": "EstimatorOptions"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4b_ex4c",
+        "exercise": "ex4c",
+        "params": [
+          {
+            "name": "options_zne",
+            "annotation": "EstimatorOptions"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4b_ex4d",
+        "exercise": "ex4d",
+        "params": [
+          {
+            "name": "options_pec",
+            "annotation": "EstimatorOptions"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4b_ex4",
+        "exercise": "ex4",
+        "params": [
+          {
+            "name": "estimator_options_list",
+            "annotation": "list[EstimatorOptions]"
+          },
+          {
+            "name": "results_dict",
+            "annotation": "EMResults"
+          },
+          {
+            "name": "job_list",
+            "annotation": "list[RuntimeJobV2 | LocalRuntimeJob]"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4b_exbonus",
+        "exercise": "exbonus",
+        "params": [
+          {
+            "name": "result_bonus",
+            "annotation": "PartitionResult"
+          },
+          {
+            "name": "best_bits",
+            "annotation": "list[int]"
+          },
+          {
+            "name": "numbers_bonus",
+            "annotation": "list[int] | np.ndarray"
+          },
+          {
+            "name": "job_bonus",
+            "annotation": "RuntimeJobV2 | LocalRuntimeJob"
+          }
+        ]
+      }
+    ],
+    "lab4c": [
+      {
+        "grader": "grade_lab4c_ex1a",
+        "exercise": "ex1a",
+        "params": [
+          {
+            "name": "alpha_beta_indices",
+            "annotation": "Sequence[Sequence[int]]"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4c_ex1b",
+        "exercise": "ex1b",
+        "params": [
+          {
+            "name": "initial_layout",
+            "annotation": "Sequence[int]"
+          },
+          {
+            "name": "alpha_beta_indices",
+            "annotation": "Sequence[Sequence[int]]"
+          },
+          {
+            "name": "seed",
+            "annotation": "Optional[int]"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4c_ex2a",
+        "exercise": "ex2a",
+        "params": [
+          {
+            "name": "reshape_bitstring",
+            "annotation": "Callable[[np.ndarray, int], np.ndarray]"
+          },
+          {
+            "name": "raw_bitstrings",
+            "annotation": "np.ndarray"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4c_ex2b",
+        "exercise": "ex2b",
+        "params": [
+          {
+            "name": "hamming_weight",
+            "annotation": "Callable[[np.ndarray], np.ndarray]"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4c_ex3a",
+        "exercise": "ex3a",
+        "params": [
+          {
+            "name": "prob_flip_0_to_1",
+            "annotation": "Callable[[np.ndarray], np.ndarray]"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4c_ex3b",
+        "exercise": "ex3b",
+        "params": [
+          {
+            "name": "recover_configurations",
+            "annotation": "Callable[[np.ndarray, np.ndarray, np.ndarray, int, tuple[int, int], np.random.Generator], tuple[np.ndarray, np.ndarray]]"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4c_ex4",
+        "exercise": "ex4",
+        "params": [
+          {
+            "name": "hf_like_ci_strings",
+            "annotation": "np.ndarray"
+          }
+        ]
+      },
+      {
+        "grader": "grade_lab4c_exbonus",
+        "exercise": "exbonus",
+        "params": [
+          {
+            "name": "best_energy",
+            "annotation": "float"
+          },
+          {
+            "name": "best_subspace",
+            "annotation": "tuple[np.ndarray, np.ndarray]"
+          }
+        ]
+      }
+    ]
+  },
+  "totals": {
+    "lab0": 4,
+    "lab1": 7,
+    "lab2": 7,
+    "lab3": 5,
+    "lab4a": 2,
+    "lab4b": 16,
+    "lab4c": 8
+  }
+}

@@ -1,0 +1,38 @@
+#
+# Author: Mauro Risonho de Paula Assumpção
+# Date Created: Not recorded
+# Date Updated: 2026-10-03
+# Short Description: Example configuration for the Discord data collector.
+# Development Method: Human mental calculations and paper-and-pencil work, assisted by GitHub Copilot and Claude available at the time of the event.
+# License: MIT
+#
+
+# Copy this file to discord_automation/config/discord_config.yaml and customize.
+# You must use an official Discord Bot token (not user token).
+# Add the bot to the target server with permissions to read message history and attachments.
+
+bot_token_env: DISCORD_BOT_TOKEN
+
+# Optional: force a specific guild by numeric ID. If null, the first shared guild is used.
+guild_id: null
+
+# Optional: restrict collection to specific channel IDs.
+# Example: [1523671601009262632]
+include_channel_ids: []
+
+# Optional: restrict collection to exact channel names (case-insensitive).
+# Example: ["announcements", "technical-support"]
+include_channel_names_exact: []
+
+# Collection limits
+history_limit_per_channel: 5000
+max_attachments_per_run: 500
+
+# Filters
+include_channel_name_patterns: []
+exclude_channel_name_patterns:
+  - "^admin"
+  - "^mod"
+
+# Output root
+output_dir: discord_automation/output
