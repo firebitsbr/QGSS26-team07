@@ -14,15 +14,35 @@ discord_automation/config/discord_config.yaml
 
 # Lab solutions — the official QGSS26 FAQ prohibits publishing them
 data/labs/solutions/
+data/labs/qgss-2026-official/
 
 # Environments
 .conda/
 .venv/
 __pycache__/
 *.pyc
+.vscode/
 
 # Collection output
 discord_automation/output/
 data/*/downloads/
 data/*/html/
 data/*/logs/
+data/catalog/
+data/ibm_learning/manifests/candidate_links.tsv
+data/ibm_learning/manifests/collection_summary.txt
+data/ibm_learning/manifests/file_asset_urls.txt
+data/ibm_learning/manifests/file_assets.tsv
+data/ibm_learning/manifests/html_map.tsv
+data/qgss26/manifests/audienceapi_paths.txt
+data/qgss26/manifests/candidate_asset_links.tsv
+data/qgss26/manifests/collection_summary.txt
+data/qgss26/manifests/direct_media_links.tsv
+data/qgss26/manifests/html_map.tsv
+data/qgss26/manifests/js_urls.txt
+data/qgss26/manifests/lp_links.txt
+data/qgss26/scripts/production.js
+
+# Local reports and personal reference links
+docs/
+links.md
